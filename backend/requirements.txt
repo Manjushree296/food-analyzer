@@ -1,0 +1,17 @@
+flask==3.1.2
+flask-cors==6.0.1
+easyocr==1.7.2
+# NOTE: Do NOT pin `torch`/`torchvision` here. Install them with the
+# official PyTorch wheels for your platform (see https://pytorch.org/get-started/locally/).
+# Pinning specific torch builds in this file often causes "ResolutionImpossible" errors
+# because PyTorch wheels are platform/CUDA-specific and the resolver can't satisfy
+# binary wheel constraints together with other packages.
+# Example (CPU-only) - run manually in your environment:
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch torchvision
+# Or for CUDA (example for CUDA 11.8):
+#   pip install --index-url https://download.pytorch.org/whl/cu118 torch torchvision
+
+Pillow==9.5.0
+scikit-image==0.25.2
+opencv-python-headless==4.12.0.88
+deep-translator==1.10.0
